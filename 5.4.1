@@ -1,0 +1,17 @@
+class Building:
+    total = []
+
+    def __init__(self, name):
+        self.name = name
+
+
+def sum_(n):
+    for i in range(1, n + 1):
+        Building.total.append(i)
+        print(f'Здание № {i}')
+    return Building.total
+
+
+sum_(40)
+
+print(f'Общее количество зданий: {len(Building.total)}')
